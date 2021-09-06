@@ -11,7 +11,7 @@ const student = {
     address: {
         city: 'Airmadidi',
         postalCode: 95371,
-        province: 'Sulawesi Utama'
+        province: 'Sulawesi Utara'
     },
     hobbies: ['berenang', 'traveling', 'membaca']
 };
@@ -24,3 +24,12 @@ const student = {
 //optional chaining: ?.
 //mau cek ada isi atau tidak
 //console.log(student?.address?.street);
+
+// destructering -- keluarkan properti objek dan langsung akses
+//console.log(student.firstName);
+
+const {firstName, gender, address: {province}} = student;
+console.log(firstName + "\n" + gender);
+console.log(province);
+//jadi tidak harus console.log(student.address.province);
+

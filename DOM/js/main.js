@@ -25,7 +25,7 @@
 
  
  /**
- * querySelector() & querySelectorAll()*/ 
+ * querySelector() -melihat 1- & querySelectorAll() - className & tagname -*/ 
 //hanya mengembalikan nilai yang pertama jika hasil > 1
 
 
@@ -45,8 +45,6 @@ let submitButton = document.querySelector('input[type="submit"]');
 
 let prodiName = document.querySelectorAll('input[type="text"]');
 //console.log(prodiName[1]);
-
-
 
 
 

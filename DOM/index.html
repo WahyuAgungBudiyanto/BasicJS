@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript DOM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="main-header">
@@ -13,7 +14,6 @@
     <div id="main">
         <h2 class="sub-title">Add Prodi</h2>
 
-
         <form id="prodi-form">
             <input type="text" name="prodiName" id="prodi-name">
             <input type="text" name="prodiAbbr" id="prodi-abbr">
@@ -21,23 +21,34 @@
         </form>
 
         <h2 class="sub-title">List of Prodi</h2>
-        
-        <ul id="prodi">
-            <li class="list-item">Ilmu Filsafat/ FIL</li>
-            <li class="list-item">Akuntansi / AKUN</li>
-            <li class="list-item">Manajemen / MANA</li>
-            <li class="list-item">Sistem Informasi / SI</li>
-        </ul>
 
+        <br><br>
+
+        <label for="text">Search..</label>
+        <input type="text" id="search" name="search">
+
+        <br><br>
+
+        <ul id="prodi">
+            <li class="list-item">Ilmu Filsafat/ FIL <a href="#" class = "delete">Delete</a></li>
+            <li class="list-item">Akuntansi / AKUN <a href="#" class = "delete">Delete</a></li>
+            <li class="list-item">Manajemen / MANA <a href="#" class = "delete">Delete</a></li>
+            <li class="list-item">Sistem Informasi / SI <a href="#" class = "delete">Delete</a></li>
+        </ul>
+        <br><br><br><br><br><br>
         <p>List subject to change.</p>
         <button id="buttonClick">Click Me</button>
-        
+        <br><br>
+        <label for="text">Type something..</label>
+        <input type="text" id="typing" name="typing">
+        <br><br>
+        <div class="div" id="kotak"></div>
     </div>
 
     <footer id="footer">
         <p>Copyright 2021</p>
     </footer>
 
-    <script src="js/event.js"></script>
+    <script src="js/addprodi.js"></script>
 </body>
 </html>
